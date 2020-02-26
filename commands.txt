@@ -1,0 +1,8 @@
+docker build -t webserver ~/Documents/ft_server/ft_server_old OR docker build -t webserver .
+docker build --no-cache -t webserver .
+
+docker run -it --name webserver -p80:80 -p443:443 webserver
+
+exit
+Docker rm webserver
+docker system prune
